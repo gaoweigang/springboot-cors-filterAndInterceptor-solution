@@ -1,0 +1,42 @@
+0.跨域相关的文章
+https://www.jianshu.com/p/d05303d34222 这篇文章里面有错误，可以参考http://www.ruanyifeng.com/blog/2016/04/cors.html纠正
+
+在这个案列中，我写了一个简单的静态页面index.html,该页面是独立的，实际开发中可能在另一个前端项目中(现在很多项目都是前后端分离的)。
+
+解决方案：
+https://www.cnblogs.com/cityspace/p/6858969.html
+
+
+推荐工具：browser-sync
+官网：http://www.browsersync.cn/
+安装：npm install -g browser-sync
+进入到HTML所在页面，启用静态页面：browser-sync start --server --files "*.html"
+
+可能会遇到的问题：
+1.Unrecognized token 'ename': was expecting ('true', 'false' or 'null')(ajax中data动态获取数据)
+解决方案：http://blog.csdn.net/javaee_sunny/article/details/52576710
+
+
+
+
+后续问题：
+Springboot处理跨域问题
+
+1.session共享
+
+2.spring session实现分布式session
+
+3.SpringBoot配置类WebMvcConfigurerAdapter
+
+4.SpringBoot配置拦截器
+https://www.jianshu.com/p/f69b21731b41
+
+
+5.CROS 跨域
+CrossOrigin注解在Spring mvc4.2之上才有的特性
+可参考http://spring.io/blog/2015/06/08/cors-support-in-spring-framework
+https://www.cnblogs.com/520playboy/p/7306008.html
+http://blog.csdn.net/cnyygj/article/details/68489200
+
+跨域资源共享CROS详解：http://www.ruanyifeng.com/blog/2016/04/cors.html
+

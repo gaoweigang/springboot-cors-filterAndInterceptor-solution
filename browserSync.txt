@@ -1,0 +1,18 @@
+1.安装Node.js
+BrowserSync是基于Node.js的，是一个Node模块，如果您想要快速使用它，也许您需要先安装一下Node.js
+
+2.安装BrowserSync
+您可以选择从Node.js的包管理器(NPM)库中安装BrowserSync。打开一个终端窗口，运行一下命令：
+npm install -g browser-sync
+该命令告诉包管理器下载BrowserSync文件，并在全局下安装它们，您可以在所有项目(任何目录)中使用。
+
+3. 启动 BrowserSync
+一个基本用途是，如果您只希望在对某个css文件进行修改后会同步到浏览器里。那么您只需要运行命令行工具，进入到该项目（目录）下，并运行相应的命令：
+静态网站
+如果您想要监听.css文件, 您需要使用服务器模式。 BrowserSync 将启动一个小型服务器，并提供一个URL来查看您的网站
+// --files 路径是相对于运行该命令的项目（目录） 
+browser-sync start --server --files "css/*.css"
+
+如果您需要监听多个类型的文件，您只需要用逗号隔开。例如我们再加入一个.html文件
+// --files 路径是相对于运行该命令的项目（目录） 
+browser-sync start --server --files "css/*.css, *.html"
